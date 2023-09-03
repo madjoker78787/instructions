@@ -16,3 +16,7 @@
 - git remote remove origin_name
 - git remote rename oldname newname
 - git remote show origin_name
+
+
+- git log
+- git log --oneline
