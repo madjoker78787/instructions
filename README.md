@@ -22,3 +22,9 @@
 - git log --oneline
 
 
+
+- git commit --amend --no-edit
+- git commit --amend -m "edit commit message"
+- git restore --staged <file>
+- git reset --hard <commit hash>
+- git restore <file>
