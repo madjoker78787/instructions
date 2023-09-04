@@ -26,6 +26,10 @@
 
 ---
 
+- git status --ignored
+
+---
+
 - git commit --amend --no-edit
 - git commit --amend -m "edit commit message"
 - git restore --staged <file> переведёт файл из staged обратно в modified или untracked
@@ -37,3 +41,21 @@
 - git diff
 - git diff --staged
 - git diff hash_a hash_b
+
+---
+
+##.gitignore
+
+- *.jpeg игнорировать все файлы, которые заканчиваются на .jpeg
+- !doge.jpeg кроме этого файла
+- docs/*/tmp игнорировать все файлы "tmp" во всех подпапках папки docs
+- file?.txt fileA.txt file1.txt, но не file12.txt
+- file[0-2][abc][a-z].txt игнорировать файлы file0.txt, file1.txt и file2.txt
+
+- /todo.txt игнорировать todo.txt в корне репозитория
+- spam.txt spam.txt будет игнорироваться во всех папках
+
+- build/ игнорировать папку build
+
+- docs/**/tmp игнорировать файлы docs/tmp docs/current/tmp, docs/old/tmp, а также docs/old/saved/a/b/c/d/tmp
+- docs/*/tmp игнорировать только docs/current/tmp и docs/old/tmp
