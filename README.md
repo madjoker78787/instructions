@@ -20,3 +20,13 @@
 
 - git log
 - git log --oneline
+
+
+```mermaid
+graph LR;
+	untracked -- "git add" --> staged;
+	staged    -- "???"     --> tracked/comitted;
+
+%%Начало комментария
+
+```
