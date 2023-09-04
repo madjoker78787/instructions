@@ -24,9 +24,9 @@
 
 ```mermaid
 graph LR;
-	untracked -- "git add" --> staged;
-	staged    -- "???"     --> tracked/comitted;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
 
-%%Начало комментария
-
+%% стрелка без текста для примера: 
+  A --> B;
 ```
