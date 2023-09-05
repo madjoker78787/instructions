@@ -30,8 +30,8 @@
 
 ---
 
-- git commit --amend --no-edit
-- git commit --amend -m "edit commit message"
+- git commit --amend --no-edit добавить изменения к последнему коммиту и оставить сообщение прежним
+- git commit --amend -m "edit commit message" изменить сообщение последнего коммита
 - git restore --staged <file> переведёт файл из staged обратно в modified или untracked
 - git reset --hard <commit hash> «откатит» историю до коммита с хешем <hash>. Более поздние коммиты потеряются!
 - git restore <file> «откатит» изменения в файле до последней сохранённой (в коммите или в staging) версии
@@ -39,8 +39,32 @@
 ---
 
 - git diff
-- git diff --staged
+- git diff --staged показать изменения, которые добавлены в staged-файлах
 - git diff hash_a hash_b
+
+---
+
+- git clone git@github.com:"username"/"repo-name".git
+
+---
+
+- git branch list branch
+- git branch "branch_name" add branch
+- git checkout "branch_name" change branch
+- git checkout -b "branch_name"
+
+---
+
+- git diff "branch_name_1" "branch_name_2"
+- git diff HEAD~ HEAD
+- git diff HEAD~1 HEAD
+- git diff hash~1 hash
+- git diff master~3 master~1
+
+---
+
+- git merge "branch_name"
+- git branch -D(-d) "branch_name" delete branch
 
 ---
 
