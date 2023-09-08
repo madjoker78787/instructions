@@ -95,3 +95,8 @@
 
 - docs/**/tmp игнорировать файлы docs/tmp docs/current/tmp, docs/old/tmp, а также docs/old/saved/a/b/c/d/tmp
 - docs/*/tmp игнорировать только docs/current/tmp и docs/old/tmp
+
+---
+##python
+
+- py -3 -m pydoc -b
