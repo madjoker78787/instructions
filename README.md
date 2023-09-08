@@ -12,10 +12,12 @@
 2. git add --all
 3. git commit -m "message"
 4. git push -u origin master(main) или другая ветка
+5. git push --force грубо слить ветки с потерей непорядка
 
 ---
 
-- git remote remove origin_name
+- git remote remove origin_name удалить оригин
+- git remote rm origin_name удалить оригин v2
 - git remote rename oldname newname
 - git remote show origin_name
 
@@ -23,6 +25,7 @@
 
 - git log
 - git log --oneline
+- git log --graph --oneline
 
 ---
 
@@ -48,14 +51,17 @@
 
 ---
 
-- git branch list branch
-- git branch "branch_name" add branch
-- git checkout "branch_name" change branch
-- git checkout -b "branch_name"
+- git branch список веток
+- git branch -a список веток локальных и удаленных
+- git branch "branch_name" добавить ветку
+- git checkout "branch_name" переключить на ветку
+- git checkout -b "branch_name" создать ветку и переключиться на нее
 
 ---
 
-- git diff "branch_name_1" "branch_name_2"
+##разница веток
+
+- git diff "branch_name_1" "branch_name_2" 
 - git diff HEAD~ HEAD
 - git diff HEAD~1 HEAD
 - git diff hash~1 hash
@@ -63,10 +69,15 @@
 
 ---
 
-- git merge "branch_name"
-- git branch -D(-d) "branch_name" delete branch
+- git merge main(master) объедини ветку main(master) с текущей активной веткой
+- git merge --no-edit "branch" --no-edit избавляет от необходимости вводить сообщение для merge-коммита
+- git branch -D "branch_name" жестко удалить ветку
+- git branch -d "branch_name" удалить ветку если она является частью main
 
 ---
+
+- git merge --no-ff "branch" отключить слияние веток Fast-forward
+- git config [--global] merge.ff false отключить слияние веток Fast-forward навсегда
 
 ##.gitignore
 - ** игнорировать все файлыв
