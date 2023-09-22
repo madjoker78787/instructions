@@ -59,7 +59,7 @@
 
 ---
 
-##разница веток
+# разница веток
 
 - git diff "branch_name_1" "branch_name_2" 
 - git diff HEAD~ HEAD
@@ -79,7 +79,7 @@
 - git merge --no-ff "branch" отключить слияние веток Fast-forward
 - git config [--global] merge.ff false отключить слияние веток Fast-forward навсегда
 
-##.gitignore
+# .gitignore
 - ** игнорировать все файлыв
 
 - *.jpeg игнорировать все файлы, которые заканчиваются на .jpeg
