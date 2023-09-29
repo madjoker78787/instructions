@@ -100,3 +100,4 @@
 ##python
 
 - py -3 -m pydoc -b
+
